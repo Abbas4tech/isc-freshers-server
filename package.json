@@ -1,0 +1,27 @@
+{
+  "name": "isc-freshers-server",
+  "version": "1.0.0",
+  "description": "This is server side for isc-freshers-training",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abbas4tech/isc-freshers-server.git"
+  },
+  "author": "Abbas Shaikh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abbas4tech/isc-freshers-server/issues"
+  },
+  "homepage": "https://github.com/Abbas4tech/isc-freshers-server#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "mongoose": "^6.5.0",
+    "nodemon": "^2.0.19"
+  }
+}
