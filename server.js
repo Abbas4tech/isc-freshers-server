@@ -39,6 +39,23 @@ app.get("/", async (req, res) => {
   res.send(resp);
 });
 
+app.get("/:id", async (req, res) => {
+  const id = req.params.id;
+  const resp = await Universities.find(
+    { _id: id },
+    {
+      name: 1,
+      logo: 1,
+      "address.city": 1,
+      "address.state": 1,
+      "address.region": 1,
+      description: 1,
+    }
+  );
+  console.log(resp);
+  res.send(resp);
+});
+
 const server = http.createServer(app);
 server.listen(3000, (req, res) => {
   console.log("Your server is running on 3000");
